@@ -35,17 +35,15 @@ Vulnerability #2: SQL Injection
 ## Green
 
 Vulnerability #1: Cross-Site Scripting (XSS)
-
-    GIF: ![](green1.gif)
-    - Details
-        * Click on "Contact Tab", fill out the forms and add this <script>alert('XSS ALERT');</script> to the comment box.
-        * Log in and you'll get an XSS alert.
+  GIF: ![](green1.gif)
+   - Details
+       * Click on "Contact Tab", fill out the forms and add this <script>alert('XSS ALERT');</script> to the comment box.
+       * Log in and you'll get an XSS alert.
         
 Vulnerability #2: Username Enumeration
-
-    GIF: ![](green2.gif)
-    - Details 
-        * If you login with a correct username, but incorrect password, it will show a bold error. However, when you enter a incorrect             username, the error is not bold
+  GIF: ![](green2.gif)
+   - Details 
+       * If you login with a correct username, but incorrect password, it will show a bold error. However, when you enter a incorrect            username, the error is not bold
 
 ## Red
 

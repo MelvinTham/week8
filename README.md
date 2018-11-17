@@ -17,14 +17,19 @@ Each version of the site has been given two of the six vulnerabilities. (In othe
 ## Blue
 
 Vulnerability #1: Session Hijacking/Fixation
-  -GIF: ![](blue1.gif)
-  -Details
-    - Open two browsers (Chrome and Firefox in this case).
-    - Login to green and go to https://104.198.208.81/green/public/hacktools/change_session_id.php and copy the PHPSESSIONID.
-    - Copy and paste that in to Blue https://104.198.208.81/blue/public/hacktools/change_session_id.php and press "Change".
-    - Change the url to https://104.198.208.81/blue/public/index.php and you will be logged in without even logging in!
 
-Vulnerability #2: __________________
+    GIF: ![](blue1.gif)
+  - Details
+    * Open two browsers (Chrome and Firefox in this case).
+    * Login to green and go to https://104.198.208.81/green/public/hacktools/change_session_id.php and copy the PHPSESSIONID.
+    * Copy and paste that in to Blue https://104.198.208.81/blue/public/hacktools/change_session_id.php and press "Change".
+    * Change the url to https://104.198.208.81/blue/public/index.php and you will be logged in without even logging in!
+
+Vulnerability #2: SQL Injection
+  GIF: ![](blue2.gif)
+  - Details
+    * Direct to the "Find a Sales Person Tab"
+    * Click on a sales person and add this ' OR SLEEP(5)=0--' to the url at the end. 
 
 
 ## Green

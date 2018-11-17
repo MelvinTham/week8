@@ -17,7 +17,6 @@ Each version of the site has been given two of the six vulnerabilities. (In othe
 ## Blue
 
 Vulnerability #1: Session Hijacking/Fixation
-
     GIF: ![](blue1.gif)
   - Details
     * Open two browsers (Chrome and Firefox in this case).

@@ -1,6 +1,6 @@
 # Project 8 - Pentesting Live Targets
 
-Time spent: **X** hours spent in total
+Time spent: **5** hours spent in total
 
 > Objective: Identify vulnerabilities in three different versions of the Globitek website: blue, green, and red.
 
@@ -47,6 +47,18 @@ Vulnerability #2: Username Enumeration
 
 ## Red
 
-Vulnerability #1: __________________
+Vulnerability #1: Cross-Site Request Forgery (CSRF)
+  GIF: ![](red1.gif)
+   - Details
+       * Login to Red and choose "SalesPeople".
+       * Create an html file and change the form to 
+       ` <form name="cool" action="https://104.198.208.81/red/public/staff/salespeople/edit.php?id=5" `
+       * Refresh the page and click "show" and your html page should show.
 
-Vulnerability #2: __________________
+Vulnerability #2: Insecure Direct Object Reference (IDOR)
+  GIF: ![](red2.gif)
+   - Details
+       * Login to Red and click on one of the sales people and get their ID.
+       * Log out and goto the public site.
+       * Click on a salesperson and change their ID to the one you just found earlier.
+       * Regular users shouldn't be able to access the salespersons information.
